@@ -9,22 +9,20 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.zhc</groupId>
-    <artifactId>springcloud-learn</artifactId>
+    <artifactId>eureka-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springcloud-learn</name>
+    <name>eureka-server</name>
     <description>Demo project for Spring Boot</description>
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
     </dependencies>
 
-    <!-- 添加spring-boot的maven插件，不能少，打jar包时得用 -->
     <build>
         <plugins>
             <plugin>
