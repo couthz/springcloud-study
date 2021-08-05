@@ -21,4 +21,15 @@ eureka:
 
 microservice-provider-user:
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+#配置日志
+feign:
+  client:
+    config:
+      microservice-provider-user:
+        loggerLevel: full
+
+logging:
+  level:
+    com.zhc.springcloudlearnconsumer.service.UserFeignClient: debug
